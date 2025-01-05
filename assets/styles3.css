@@ -1,0 +1,82 @@
+/* styles1.css */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(90deg, #dcd6f7, #f8c3e5, #a2d2ff);
+    background-size: 200% 200%;
+    animation: gradientAnimation 10s infinite ease-in-out;
+    color: #333;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+}
+
+ul li {
+    margin-right: 20px; /* Adds space between items */
+}
+
+
+@keyframes gradientAnimation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+@keyframes colorChange {
+    0% {
+        background-color: rgba(74, 144, 226, 0.9); /* Initial background color */
+    }
+    25% {
+        background-color: rgba(80, 160, 255, 0.9); /* Lighter shade */
+    }
+    50% {
+        background-color: rgba(50, 100, 180, 0.9); /* Slightly darker shade */
+    }
+    75% {
+        background-color: rgba(60, 120, 200, 0.9); /* Another intermediate shade */
+    }
+    100% {
+        background-color: rgba(74, 144, 226, 0.9); /* Back to the initial shade */
+    }
+}
+
+header {
+    background-color: rgba(74, 144, 226, 0.9); /* Starting background color */
+    color: white;
+    padding: 1rem 0;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    animation: colorChange 10s ease-in-out infinite; /* Animation applied */
+    transition: transform 0.6s ease-in-out; /* Smooth and slower transition */
+    transform-origin: center; /* Ensures the text grows from the center */
+}
+
+.big:hover {
+    transform: scale(1.15); /* Scales the text by 10% on hover */
+    color: red;
+}
+
+
+main {
+    text-align: center;
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 2rem;
+}
+
+section {
+    margin-bottom: 2rem;
+}
+
+footer {
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    background-color: rgba(13, 60, 130, 0.8);
+    font-size: 0.9rem;
+    margin-top: 20%;
+}
