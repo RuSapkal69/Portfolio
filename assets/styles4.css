@@ -46,7 +46,7 @@ header {
 
 .big:hover {
     transform: scale(1.15); /* Scales the text by 10% on hover */
-    color: red;
+    color: rgb(51, 197, 51);
 }
 
 
